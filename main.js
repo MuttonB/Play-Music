@@ -26,12 +26,17 @@ function getTime() {
     document.querySelector(".range").style.backgroundSize = (index * curren).toFixed(2) + "%"
     document.querySelector(".range").value = (index * curren).toFixed(2)
     if (document.querySelector(".range").getAttribute("style") == "background-size: 100%;") {
-        pause()
         document.querySelector(".album").style.animation = "none"
         document.querySelector(".range").value = 0
         document.querySelector(".range").style.backgroundSize = 0
+        document.querySelector(".pro p:first-child").innerHTML = "00:00"
         audio.currentTime = 0
         nextSong()
+        clearlrc()
+        setTimeout(() => {
+            setlrc()
+        }, 100);
+        setlist()
         setTimeout(playing(), 500)
     }
 }
@@ -46,6 +51,7 @@ window.onload = function () {
     }
     showMusic()
     showlist()
+    setlist()
     changeSong()
     winWidth()
 };
@@ -106,7 +112,7 @@ function showMusic() {
     document.querySelector(".time").innerHTML = data[localStorage.getItem("singId")].time;
     document.querySelector(".singerPicture").setAttribute("src", data[localStorage.getItem("singId")].singer_picture)
     audio.setAttribute("src", data[localStorage.getItem("singId")].song_url)
-    showlist()
+
 }
 document.querySelector(".header").addEventListener("mouseover", function () {
     more.onclick = function () {
@@ -122,14 +128,16 @@ document.querySelector(".header").addEventListener("mouseover", function () {
         contant.classList.remove("cactive")
     };
 });
+var lists = document.querySelector(".songlist .lists")
 function showlist() {
-    var lists = document.querySelector(".songlist .lists")
     for (let i = 0; i < data.length; i++) {
         var ul = document.createElement("ul");
         lists.append(ul);
         ul.innerHTML = '<li><div><p><img src=' + data[i].album + '><p><span>' + data[i].song + '</span><span>' + data[i].singer + '</span></p></div><p>' + data[i].time + '</p></li>';
         ul.setAttribute("data-id", data[i].id)
     }
+}
+function setlist() {
     for (let i = 0; i < lists.children.length; i++) {
         lists.children[i].classList = ""
     }
@@ -176,31 +184,38 @@ function changeSong() {
         })
     }
 }
-var mId = localStorage.getItem("singId")
 
 document.querySelector(".nextSong").onclick = function () {
     nextSong()
+    setlist()
+    clearlrc()
+    setTimeout(() => {
+        setlrc()
+    }, 100);
 }
 
 document.querySelector(".backSong").onclick = function () {
     backSong()
+    setlist()
+    clearlrc()
+    setTimeout(() => {
+        setlrc()
+    }, 100);
 }
 function nextSong() {
-    if (mId < data.length - 1) {
-        mId++
+    if (localStorage.getItem("singId") < data.length - 1) {
+        localStorage.setItem("singId", Number(localStorage.getItem("singId")) + 1)
     } else {
-        mId = 0
+        localStorage.setItem("singId", 0)
     }
-    localStorage.setItem("singId", mId)
     showMusic()
 }
 function backSong() {
-    if (mId > 0) {
-        mId--
+    if (localStorage.getItem("singId") > 0) {
+        localStorage.setItem("singId", Number(localStorage.getItem("singId")) - 1)
     } else {
-        mId = data.length - 1
+        localStorage.setItem("singId", data.length - 1)
     }
-    localStorage.setItem("singId", mId)
     showMusic()
 }
 
