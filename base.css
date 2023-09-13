@@ -133,7 +133,7 @@ img:hover {
 .main {
     overflow: hidden;
     width: 350px;
-    height: 620px;
+    height: 660px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -198,6 +198,7 @@ img:hover {
     position: relative;
     animation: bgmove 1s infinite alternate;
     animation-play-state: running;
+    top: -28px;
 }
 
 .audio::after {
@@ -237,8 +238,7 @@ img:hover {
     position: relative;
     justify-content: space-evenly;
     padding: 0 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .controls .menu {
@@ -248,7 +248,7 @@ img:hover {
     background-color: rgba(239, 239, 239, 0.9);
     border-radius: 10px;
     padding: 0 20px;
-    width: 50%;
+    width: 65%;
 }
 
 .controls .menu p:first-child,
@@ -333,8 +333,8 @@ img:hover {
 }
 
 .pro {
-    margin-top: -20px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     display: flex;
     padding: 0 20px;
 }
@@ -507,15 +507,14 @@ img:hover {
     left: 0;
     right: 0;
     top: 90%;
-    width: 92%;
+    width: 77%;
     height: 50px;
-    background: url("https://s1.ax1x.com/2023/09/08/pP6iIQH.jpg") no-repeat;
-    background-size: cover;
     border-radius: 12px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 2px 0;
+    background: linear-gradient(to right, rgb(201, 214, 255), rgb(226, 226, 226));
 }
 
 .up p:hover {
@@ -661,7 +660,7 @@ audio {
 }
 
 .darkbg {
-    background: linear-gradient(to right, rgba(75, 121, 161, 0.7), rgba(40, 62, 81, 0.7));
+    background: linear-gradient(to right, rgba(75, 121, 161, 0.9), rgba(40, 62, 81, 0.9));
 }
 
 .darkbg ul {
@@ -695,20 +694,19 @@ audio {
     position: absolute;
     left: 0;
     right: 0;
-    top: 110px;
-    margin: auto;
+    top: 108px;
     width: 100%;
-    height: 280px;
     padding: 20px;
     overflow: hidden;
-    opacity: 0;
-    z-index: -1;
+    margin-top: 260px;
+    height: 120px;
 }
 
 .lrcList {
-    line-height: 36px;
+    line-height: 26px;
     font-size: 16px;
     padding-bottom: 50px;
+    font-size: 0.9rem;
 }
 
 .lrcList .active {

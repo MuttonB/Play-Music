@@ -231,8 +231,7 @@ function changeTheme() {
             }
             document.querySelector(".contant").classList.add("darkbg")
             document.querySelector(".songlist").classList.add("darul")
-            document.querySelector(".up").style.background = "rgba(23,33,107,0.2)"
-            document.querySelector(".up").style.backgroundSize = "cover"
+            document.querySelector(".up").style.backgroundImage = "linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85))"
         }
         else {
             this.setAttribute("data-dark", 0)
@@ -244,8 +243,7 @@ function changeTheme() {
                 document.querySelectorAll(".more span")[i].style.border = "1px solid black"
             }
             document.querySelector(".songlist").classList.remove("darul")
-            document.querySelector(".up").style.background = "url(https://s1.ax1x.com/2023/09/08/pP6iIQH.jpg)"
-            document.querySelector(".up").style.backgroundSize = "cover"
+            document.querySelector(".up").style.backgroundImage = "linear-gradient(to right, rgb(201, 214, 255), rgb(226, 226, 226))"
         }
     }
 }
@@ -319,7 +317,7 @@ function setlrc() {
         const liHight = lrc_list.children[0].clientHeight;
         const maxOffset = lrc_list.clientHeight - containerHight;
         const index = findIndex();
-        let offset = liHight * index + liHight / 2 - containerHight / 2;
+        let offset = liHight * index + liHight / 2 - containerHight / 2 +20;
         if (offset < 0) {
             offset = 0;
         }
@@ -350,11 +348,15 @@ function clearlrc() {
 }
 document.querySelector(".album").onclick = function () {
     document.querySelector(".audio").style.opacity = 0
-    document.querySelector(".contantText").style.opacity = 1
-    document.querySelector(".contantText").style.zIndex = 1
+    document.querySelector(".contantText").style.margin = "0 auto"
+    document.querySelector(".contantText").style.height = 330 + "px"
+    document.querySelector(".lrcList").style.lineHeight = "36px"
+    document.querySelector(".lrcList").style.fontSize = "1rem"
 }
 document.querySelector(".contantText").onclick = function () {
     document.querySelector(".audio").style.opacity = 1
-    document.querySelector(".contantText").style.opacity = 0
-    document.querySelector(".contantText").style.zIndex = -1
+    document.querySelector(".contantText").style.marginTop = "260px"
+    document.querySelector(".contantText").style.height = 120 + "px"
+    document.querySelector(".lrcList").style.lineHeight = "26px"
+    document.querySelector(".lrcList").style.fontSize = "0.9rem"
 }
