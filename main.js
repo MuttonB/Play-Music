@@ -81,7 +81,7 @@ for (let i = 0; i < poin.length; i++) {
     }
 }
 document.querySelector(".showBox img").onclick = function () {
-    document.querySelector(".main").style.height = "620px"
+    document.querySelector(".main").style.height = "660px"
     document.querySelector(".main").style.top = 0
     document.querySelector(".showBox").style.zIndex = -1
     document.querySelector(".showBox").style.opacity = 0
@@ -209,6 +209,7 @@ function nextSong() {
         localStorage.setItem("singId", 0)
     }
     showMusic()
+    playing()
 }
 function backSong() {
     if (localStorage.getItem("singId") > 0) {
@@ -217,6 +218,7 @@ function backSong() {
         localStorage.setItem("singId", data.length - 1)
     }
     showMusic()
+    playing()
 }
 
 function changeTheme() {
@@ -317,7 +319,7 @@ function setlrc() {
         const liHight = lrc_list.children[0].clientHeight;
         const maxOffset = lrc_list.clientHeight - containerHight;
         const index = findIndex();
-        let offset = liHight * index + liHight / 2 - containerHight / 2 +20;
+        let offset = liHight * index + liHight / 2 - containerHight / 2 + 20;
         if (offset < 0) {
             offset = 0;
         }
@@ -356,7 +358,7 @@ document.querySelector(".album").onclick = function () {
 document.querySelector(".contantText").onclick = function () {
     document.querySelector(".audio").style.opacity = 1
     document.querySelector(".contantText").style.marginTop = "260px"
-    document.querySelector(".contantText").style.height = 120 + "px"
+    document.querySelector(".contantText").style.height = 90 + "px"
     document.querySelector(".lrcList").style.lineHeight = "26px"
     document.querySelector(".lrcList").style.fontSize = "0.9rem"
 }

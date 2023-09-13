@@ -694,12 +694,12 @@ audio {
     position: absolute;
     left: 0;
     right: 0;
-    top: 108px;
+    top: 120px;
     width: 100%;
     padding: 20px;
     overflow: hidden;
     margin-top: 260px;
-    height: 120px;
+    height: 90px;
 }
 
 .lrcList {
