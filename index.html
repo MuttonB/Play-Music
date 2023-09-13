@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music - Player</title>
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="icon" href="./img/icons8-音乐-96.png" />
+    <script src="./data.js"></script>
+</head>
+
+<body>
+    <audio id="audio"></audio>
+    <div class="main">
+        <div class="header">
+            <div class="more">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="point">
+                <span></span>
+                <span type="0"></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="contant">
+            <div class="singname">
+                <p class="song">Song</p>
+                <p>
+                    <img class="singerPicture" />
+                    <span class="singer">歌手</span>
+                    <b>+</b>
+                </p>
+            </div>
+            <div class="audio">
+                <div class="picture">
+                    <img class="album" src="#" alt="" />
+                </div>
+            </div>
+            <div class="pro">
+                <p>00:00</p>
+                <div class="gprogress">
+                    <input type="range" class="range" value="0">
+                </div>
+                <p class="time">00:00</p>
+            </div>
+            <div class="controls">
+                <p>
+                    <svg t="1694575756551" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7192" width="26"><path d="M769.349818 678.679273l67.304727-67.351273a42.682182 42.682182 0 0 1 60.369455 60.369455l-136.657455 136.610909a42.682182 42.682182 0 0 1-23.877818 15.36 42.635636 42.635636 0 0 1-52.503272-48.64V241.710545a42.682182 42.682182 0 1 1 85.364363 0v436.968728zM157.137455 254.045091h369.803636a42.682182 42.682182 0 0 1 0 85.364364H157.137455a42.682182 42.682182 0 0 1 0-85.364364z m0 227.607273h369.803636a42.682182 42.682182 0 1 1 0 85.317818H157.137455a42.682182 42.682182 0 1 1 0-85.364364z m0 227.514181h369.803636a42.682182 42.682182 0 1 1 0 85.364364H157.137455a42.682182 42.682182 0 0 1 0-85.364364z" fill="#333333" p-id="7193"></path></svg>
+                </p>
+                <div class="menu">
+                    <p class="backSong">
+                        <img src="./img/icons8-跳转到开始-48.png" alt="" />
+                    </p>
+                    <p class="play">
+                        <img src="./img/play.png" alt="" />
+                    </p>
+                    <p class="nextSong">
+                        <img src="./img/icons8-结束-48.png" alt="" />
+                    </p>
+                </div>
+                <p>
+                    <img src="./img/icons8-高音量-48.png" alt="" />
+                </p>
+            </div>
+            <!-- lrc -->
+            <div class="contantText">
+                <div class="lrcList"></div>
+            </div>
+        </div>
+
+        <div class="songlist">
+            <div class="lists"></div>
+        </div>
+
+        <div class="up">
+            <p class="active">
+                <img width="20" src="https://img.icons8.com/sf-black/64/musical-notes.png" alt="">
+                <span>Music</span>
+            </p>
+            <p>
+                <img width="20" src="https://s1.ax1x.com/2023/09/07/pPyDTbQ.png" alt="">
+                <span>Account</span>
+            </p>
+        </div>
+    </div>
+    <div class="loading">
+        <p><img src="./img/icons8-spinning-circle.gif" alt=""></p>
+    </div>
+    <div class="showBox">
+        <img src="./img/icons8-音乐-96.png" alt="">
+        <div class="tips">
+            MUSIC PLAYER
+        </div>
+    </div>
+    <div class="changeTheme">
+        <button class="theme" data-dark="0">更换主题</button>
+    </div>
+</body>
+
+<script src="./main.js"></script>
+
+</html>
