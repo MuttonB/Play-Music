@@ -6,6 +6,12 @@
     transition: all 0.8s;
 }
 
+@media (max-width:600px) {
+    .changeTheme {
+        display: none;
+    }
+}
+
 html {
     font-size: 16px;
 }

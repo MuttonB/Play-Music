@@ -370,7 +370,7 @@ function checkSong() {
     setTimeout(() => {
         if (isNaN(audio.duration) == true) {
             document.querySelector(".error").style.display = "flex"
-            document.querySelector(".error p").innerHTML = "歌曲链接失败"
+            document.querySelector(".error p").innerHTML = "歌曲链接失效"
         }
         setTimeout(() => {
             document.querySelector(".error").style.display = "none"

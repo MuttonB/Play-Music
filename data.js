@@ -89,4 +89,44 @@ var data = [
         "song_url": "http://music.163.com/song/media/outer/url?id=421486605.mp3",
         "song_lrc": "./lrc/421486605.lrc"
     },
+    {
+        "id": 2080170384,
+        "song": "Special One",
+        "singer": "AGA / 陈奕迅",
+        "singer_picture": "",
+        "album": "https://z1.ax1x.com/2023/09/14/pPR7CZD.jpg",
+        "time": "04:43",
+        "song_url": "./lrc/music/2080170384.mp3",
+        "song_lrc": "./lrc/2080170384.lrc"
+    },
+    {
+        "id": 1959344238,
+        "song": "无条件",
+        "singer": "陈奕迅",
+        "singer_picture": "http://p1.music.126.net/w_vuv9hBWq2hlJxJcmJrjg==/109951166115915081.jpg?param=300y300",
+        "album": "https://z1.ax1x.com/2023/09/14/pPRHdjP.jpg",
+        "time": "03:48",
+        "song_url": "http://music.163.com/song/media/outer/url?id=1959344238.mp3",
+        "song_lrc": "./lrc/1959344238.lrc"
+    },
+    {
+        "id": 27591205,
+        "song": "夏日倾情",
+        "singer": "卫兰",
+        "singer_picture": "http://p1.music.126.net/dphMBXfhbsi4XfaP13-uzQ==/109951167962897915.jpg?param=180y180",
+        "album": "https://z1.ax1x.com/2023/09/14/pPRb1vq.jpg",
+        "time": "03:13",
+        "song_url": "http://music.163.com/song/media/outer/url?id=27591205.mp3",
+        "song_lrc": "./lrc/27591205.lrc"
+    },
+    {
+        "id": 1971423712,
+        "song": "练习生",
+        "singer": "Pkk.",
+        "singer_picture": "http://p1.music.126.net/PxTfi_rqa-3SltEwXEj8_Q==/109951166694354259.jpg?param=180y180",
+        "album": "https://z1.ax1x.com/2023/09/14/pPRTorT.jpg",
+        "time": "02:54",
+        "song_url": "http://music.163.com/song/media/outer/url?id=1971423712.mp3",
+        "song_lrc": "./lrc/1971423712.lrc"
+    },
 ]
