@@ -309,7 +309,7 @@ img:hover {
 
 .controls>p {
     position: relative;
-    cursor: url(./cur/link.cur),pointer;
+    cursor: url(./cur/link.cur), pointer;
 }
 
 .controls>p:first-child::after {
@@ -716,4 +716,21 @@ audio {
 
 .album:hover {
     opacity: 0.8;
+}
+
+.error {
+    width: 120px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(40, 62, 81, 0.7);
+    border-radius: 8px;
+    color: whitesmoke;
+    display: none;
+    align-items: center;
+    justify-content: center;
 }

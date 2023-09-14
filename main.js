@@ -181,6 +181,7 @@ function changeSong() {
                 setlrc()
             }, 100);
             showMusic()
+            checkSong()
         })
     }
 }
@@ -210,6 +211,7 @@ function nextSong() {
     }
     showMusic()
     playing()
+    checkSong()
 }
 function backSong() {
     if (localStorage.getItem("singId") > 0) {
@@ -219,6 +221,7 @@ function backSong() {
     }
     showMusic()
     playing()
+    checkSong()
 }
 
 function changeTheme() {
@@ -361,4 +364,16 @@ document.querySelector(".contantText").onclick = function () {
     document.querySelector(".contantText").style.height = 90 + "px"
     document.querySelector(".lrcList").style.lineHeight = "26px"
     document.querySelector(".lrcList").style.fontSize = "0.9rem"
+}
+
+function checkSong() {
+    setTimeout(() => {
+        if (isNaN(audio.duration) == true) {
+            document.querySelector(".error").style.display = "flex"
+            document.querySelector(".error p").innerHTML = "歌曲链接失败"
+        }
+        setTimeout(() => {
+            document.querySelector(".error").style.display = "none"
+        }, 2500);
+    }, 1000);
 }
