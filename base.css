@@ -133,7 +133,7 @@ img:hover {
 .main {
     overflow: hidden;
     width: 350px;
-    height: 660px;
+    height: 648px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -506,7 +506,7 @@ img:hover {
     position: absolute;
     left: 0;
     right: 0;
-    top: 90%;
+    bottom: 4px;
     width: 77%;
     height: 50px;
     border-radius: 12px;
