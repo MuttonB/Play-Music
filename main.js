@@ -377,3 +377,13 @@ function checkSong() {
         }, 2500);
     }, 1000);
 }
+
+document.querySelector(".sound").onclick = function () {
+    if (audio.muted == false) {
+        audio.muted = true
+        this.children[0].setAttribute("src", "./img/声音-关.png")
+    } else {
+        audio.muted = false
+        this.children[0].setAttribute("src", "./img/声音-开.png")
+    }
+}
