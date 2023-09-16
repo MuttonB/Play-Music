@@ -120,6 +120,16 @@ var data = [
         "song_lrc": "./lrc/27591205.lrc"
     },
     {
+        "id": 65761,
+        "song": "白玫瑰",
+        "singer": "陈奕迅",
+        "singer_picture": "http://p1.music.126.net/w_vuv9hBWq2hlJxJcmJrjg==/109951166115915081.jpg?param=300y300",
+        "album": "https://z1.ax1x.com/2023/09/16/pPfJC4I.png",
+        "time": "03:58",
+        "song_url": "http://music.163.com/song/media/outer/url?id=65761.mp3",
+        "song_lrc": "./lrc/65761.lrc"
+    },
+    {
         "id": 1971423712,
         "song": "练习生",
         "singer": "Pkk.",
