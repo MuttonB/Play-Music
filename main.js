@@ -7,6 +7,7 @@ var play = document.querySelector(".play");
 var audio = document.querySelector("#audio")
 play.onclick = function () {
     if (this.firstChild.nextSibling.attributes[0].value == "./img/play.png") {
+        checkSong()
         playing()
         setInterval(getTime, 1000)
     } else {
@@ -57,7 +58,7 @@ window.onload = function () {
 };
 
 var poin = document.querySelectorAll(".point span");
-var width = 350;
+var width = 340;
 for (let i = 0; i < poin.length; i++) {
     poin[1].onclick = function () {
         if (this.getAttribute("type") == 0) {
@@ -81,7 +82,7 @@ for (let i = 0; i < poin.length; i++) {
     }
 }
 document.querySelector(".showBox img").onclick = function () {
-    document.querySelector(".main").style.height = "660px"
+    document.querySelector(".main").style.height = "610px"
     document.querySelector(".main").style.top = 0
     document.querySelector(".showBox").style.zIndex = -1
     document.querySelector(".showBox").style.opacity = 0
@@ -371,6 +372,7 @@ function checkSong() {
         if (isNaN(audio.duration) == true) {
             document.querySelector(".error").style.display = "flex"
             document.querySelector(".error p").innerHTML = "歌曲链接失效"
+            pause()
         }
         setTimeout(() => {
             document.querySelector(".error").style.display = "none"

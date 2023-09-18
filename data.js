@@ -139,4 +139,14 @@ var data = [
         "song_url": "http://music.163.com/song/media/outer/url?id=1971423712.mp3",
         "song_lrc": "./lrc/1971423712.lrc"
     },
+    {
+        "id": "2006448864",
+        "song": "失语者",
+        "singer": "刘大拿",
+        "singer_picture": "http://p1.music.126.net/20HoukiJh7LWhMnksj9y0g==/109951168863850265.jpg?param=180y180",
+        "album": "https://z1.ax1x.com/2023/09/18/pP4JM8I.png",
+        "time": "03:08",
+        "song_url": "http://music.163.com/song/media/outer/url?id=2006448864.mp3",
+        "song_lrc": "./lrc/2006448864.lrc"
+    }
 ]
