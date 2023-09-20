@@ -4,7 +4,7 @@ var data = [
         "song": "粘人",
         "singer": "二手玫瑰",
         "singer_picture": "http://p1.music.126.net/--XNCdRHliDXu5o647cwsg==/109951165912473511.jpg?param=180y180",
-        "album": "https://s1.ax1x.com/2023/09/12/pP2Zb5j.png",
+        "album": "https://pic.imgdb.cn/item/650aab42c458853aef6152b1.png",
         "time": "07:26",
         "song_url": "http://music.163.com/song/media/outer/url?id=353624.mp3",
         "song_lrc": "./lrc/353624.lrc"
@@ -24,7 +24,7 @@ var data = [
         "song": "最佳损友",
         "singer": "陈奕迅",
         "singer_picture": "http://p2.music.126.net/9QZrC7qPlx_FrZRFtw9tfA==/109951166132999889.jpg?param=120y120",
-        "album": "https://s1.ax1x.com/2023/09/09/pPc9utO.jpg",
+        "album": "https://pic.imgdb.cn/item/650aabcac458853aef616cb0.jpg",
         "time": "03:53",
         "song_url": "http://music.163.com/song/media/outer/url?id=65800.mp3",
         "song_lrc": "./lrc/65800.lrc"
@@ -34,7 +34,7 @@ var data = [
         "song": "若把你",
         "singer": "Kirsty刘瑾睿",
         "singer_picture": "http://p1.music.126.net/8u4GmCvxmqRT5oxRdjloWw==/109951163881187446.jpg?param=180y180",
-        "album": "https://s1.ax1x.com/2023/09/07/pPyNeWF.jpg",
+        "album": "https://pic.imgdb.cn/item/650aabecc458853aef617297.jpg",
         "time": "03:09",
         "song_url": "http://music.163.com/song/media/outer/url?id=865632948.mp3",
         "song_lrc": "./lrc/865632948.lrc"
