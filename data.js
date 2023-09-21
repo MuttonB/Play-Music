@@ -130,14 +130,14 @@ var data = [
         "song_lrc": "./lrc/65761.lrc"
     },
     {
-        "id": 3720256090,
+        "id": 2082019796,
         "song": "Wonderful U (Demo Version)",
         "singer": "AGA",
         "singer_picture": "http://p1.music.126.net/RkuR7kLEV9HYQel88NCaVg==/109951165995767960.jpg?param=180y180",
         "album": "https://pic.imgdb.cn/item/650acabdc458853aef6cc973.jpg",
         "time": "04:08",
-        "song_url": "http://music.163.com/song/media/outer/url?id=3720256090.mp3",
-        "song_lrc": "./lrc/3720256090.lrc"
+        "song_url": "http://music.163.com/song/media/outer/url?id=2082019796.mp3",
+        "song_lrc": "./lrc/2082019796.lrc"
     },
     {
         "id": "2006448864",
