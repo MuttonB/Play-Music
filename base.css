@@ -37,20 +37,6 @@ html {
     }
 }
 
-@keyframes bgmove {
-    from {
-        background-size: 100%;
-        background-position-x: 0;
-        background-position-y: 0px
-    }
-
-    to {
-        background-size: 108%;
-        background-position-x: -12px;
-        background-position-y: -12px;
-    }
-}
-
 @font-face {
     font-family: "base";
     src: url(./font/bebas.woff2);
@@ -197,21 +183,36 @@ img:hover {
 
 .audio {
     height: 350px;
-    width: 350px;
+    width: 320px;
     margin: auto;
+    margin-top: -20px;
     background: url("./img/装饰\ 组.png") no-repeat;
+    background-position-y: 14px;
     background-size: 100%;
     position: relative;
     animation: bgmove 1s infinite alternate;
     animation-play-state: running;
-    top: -28px;
+}
+
+@keyframes bgmove {
+    from {
+        background-size: 100%;
+        background-position-x: 0;
+        background-position-y: 14px
+    }
+
+    to {
+        background-size: 105%;
+        background-position-x: -8px;
+        background-position-y: 6px;
+    }
 }
 
 .audio::after {
     content: "";
     display: block;
-    width: 208px;
-    height: 208px;
+    width: 180px;
+    height: 180px;
     position: absolute;
     left: 0;
     right: 0;
@@ -232,8 +233,7 @@ img:hover {
     top: 0;
     margin: auto;
     width: 50%;
-    height: 50%;
-    box-shadow: 0 0 8px 0px black;
+    box-shadow: 0 0 6px -2px black;
     z-index: 99;
 }
 
@@ -339,7 +339,7 @@ img:hover {
 }
 
 .pro {
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 10px;
     display: flex;
     padding: 0 20px;
@@ -652,7 +652,7 @@ audio {
     position: absolute;
     left: 0;
     right: 0;
-    top: 120px;
+    top: 100px;
     width: 100%;
     padding: 20px;
     overflow: hidden;

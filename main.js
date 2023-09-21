@@ -256,7 +256,6 @@ function changeTheme() {
 changeTheme()
 
 var range = document.querySelector(".range")
-range.addEventListener("mousedown", function () {
     range.onmousemove = function () {
         range.style.backgroundSize = range.value + "%"
     }
@@ -264,7 +263,6 @@ range.addEventListener("mousedown", function () {
         range.style.backgroundSize = range.value + "%"
         audio.currentTime = audio.duration / 100 * e.target.value
     }
-})
 
 // lrc
 var lrc_list = document.querySelector(".lrcList")
